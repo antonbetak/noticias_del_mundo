@@ -162,6 +162,16 @@ a {
   line-height: 0.95;
 }
 
+.title-byline {
+  margin: 0;
+  color: rgba(229, 242, 255, 0.54);
+  font-family: "Instrument Serif", serif;
+  font-size: 0.68rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
 .empty-state p {
   color: var(--muted);
   line-height: 1.7;
@@ -408,6 +418,37 @@ a {
   gap: 18px;
 }
 
+.topic-story-list {
+  display: grid;
+  gap: 12px;
+}
+
+.topic-story-heading {
+  display: grid;
+  gap: 8px;
+  padding: 2px 0 6px;
+}
+
+.topic-story-heading span {
+  color: var(--accent-soft);
+  font-size: 0.78rem;
+}
+
+.topic-story-heading h3,
+.topic-story-heading p {
+  margin: 0;
+}
+
+.topic-story-heading h3 {
+  font-size: clamp(1.5rem, 2.15rem, 2.35rem);
+  line-height: 1.05;
+}
+
+.topic-story-heading p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .featured-story,
 .source-board,
 .empty-country {
@@ -419,8 +460,8 @@ a {
 
 .featured-story {
   display: grid;
-  gap: 16px;
-  padding: clamp(18px, 3vw, 30px);
+  gap: 14px;
+  padding: clamp(16px, 2.4vw, 24px);
   animation: fade-up 240ms ease both;
 }
 
@@ -432,16 +473,10 @@ a {
   flex-wrap: wrap;
 }
 
-.featured-story h3,
 .featured-story h4,
 .source-board h3,
 .empty-country h3 {
   margin: 0;
-}
-
-.featured-story h3 {
-  font-size: clamp(1.6rem, 2.45rem, 2.7rem);
-  line-height: 1.02;
 }
 
 .featured-story h4 {
@@ -486,16 +521,24 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+  align-items: start;
 }
 
 .source-tile {
   display: grid;
   gap: 7px;
-  min-height: 130px;
+  min-height: 0;
   padding: 13px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   background: rgba(3, 10, 20, 0.5);
+}
+
+.source-tile p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .source-tile strong {

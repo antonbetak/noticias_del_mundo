@@ -55,27 +55,38 @@ function TopicCard({ item, active, onSelect }) {
 }
 
 function FeaturedStory({ story, country }) {
+  const stories = story.stories?.length ? story.stories : [story];
+
   return (
-    <article
-      className="featured-story"
-      key={`${country}-${story.id}`}
-    >
-      <div className="story-topline">
+    <section className="topic-story-list" key={`${country}-${story.id}`}>
+      <div className="topic-story-heading">
         <span>{story.group}</span>
-        <span>{story.date}</span>
+        <h3>{story.label}</h3>
+        <p>{stories.length} noticias relacionadas para este tema.</p>
       </div>
-      <h3>{story.label}</h3>
-      <h4>{story.title}</h4>
-      <p>{story.summary}</p>
-      <div className="classroom-note">
-        <span>Nota para clase</span>
-        <p>{story.classroomNote}</p>
-      </div>
-      <div className="story-footer">
-        <span>{story.source}</span>
-        <SourceLink item={story} />
-      </div>
-    </article>
+
+      {stories.map((item, index) => (
+        <article
+          className="featured-story"
+          key={`${country}-${story.id}-${item.headline}`}
+        >
+          <div className="story-topline">
+            <span>Noticia {index + 1}</span>
+            <span>{item.date}</span>
+          </div>
+          <h4>{item.headline}</h4>
+          <p>{item.summary}</p>
+          <div className="classroom-note">
+            <span>Nota para clase</span>
+            <p>{item.classroomNote}</p>
+          </div>
+          <div className="story-footer">
+            <span>{item.source}</span>
+            <SourceLink item={item} />
+          </div>
+        </article>
+      ))}
+    </section>
   );
 }
 
@@ -110,6 +121,7 @@ export default function App() {
             <div className="title-block">
               <span className="title-kicker">Edición global</span>
               <h1>Periódico de Finanzas Internacionales</h1>
+              <p className="title-byline">by Rodrigo Soto Camacho</p>
             </div>
 
             <div className="stage-meta">
@@ -202,7 +214,7 @@ export default function App() {
                     <h3>Base reciente de {countryLabel}</h3>
                   </div>
                   <div className="source-grid">
-                    {Object.values(briefing.sources).map((source) => (
+                    {Object.values(briefing.sources).flat().map((source) => (
                       <a
                         className="source-tile"
                         href={source.url}

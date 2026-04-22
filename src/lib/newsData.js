@@ -46,48 +46,144 @@ const COUNTRY_LIBRARY = {
     displayName: "México",
     accent: "#67efff",
     sources: {
-      global: {
-        headline: "Reuters ubica a México en un escenario de bajo crecimiento e inflación persistente",
-        source: "Reuters / Yahoo Finance",
-        date: "20 abr 2026",
-        url: "https://finance.yahoo.com/economy/policy/articles/mexico-economy-stuck-mild-stagflation-140914856.html",
-        summary: "Una encuesta de Reuters proyecta crecimiento de 1.5% en 2026 y destaca la incertidumbre comercial con Estados Unidos y Canadá.",
-      },
-      bop: {
-        headline: "La cuenta corriente mexicana cerró 2025 con superávit trimestral, pero menor al año previo",
-        source: "Trading Economics / Banco de México",
-        date: "feb 2026",
-        url: "https://tradingeconomics.com/mexico/current-account",
-        summary: "El superávit de cuenta corriente del cuarto trimestre de 2025 fue de 7,702 millones de dólares, con presión desde comercio y renta primaria.",
-      },
-      fx: {
-        headline: "El peso queda atado a Banxico, nearshoring y revisión del T-MEC",
-        source: "The Rio Times",
-        date: "17 abr 2026",
-        url: "https://www.riotimesonline.com/mexico-economy-2026-guide/",
-        summary: "El reporte conecta tasas, inversión extranjera y riesgo comercial con el rango esperado del peso frente al dólar.",
-      },
-      derivatives: {
-        headline: "Empresas mexicanas usan coberturas ante volatilidad de tasas, dólar y energía",
-        source: "Reuters / Yahoo Finance",
-        date: "20 abr 2026",
-        url: "https://finance.yahoo.com/economy/policy/articles/mexico-economy-stuck-mild-stagflation-140914856.html",
-        summary: "La mezcla de inflación, tasas y comercio exterior vuelve relevantes forwards, futuros y opciones para cubrir flujos en dólares.",
-      },
-      crisis: {
-        headline: "México enfrenta riesgo de estancamiento por choques externos y comercio norteamericano",
-        source: "Reuters / Yahoo Finance",
-        date: "20 abr 2026",
-        url: "https://finance.yahoo.com/economy/policy/articles/mexico-economy-stuck-mild-stagflation-140914856.html",
-        summary: "El caso sirve para analizar vulnerabilidad externa sin llegar a una crisis cambiaria clásica.",
-      },
-      cases: {
-        headline: "Nearshoring y T-MEC mantienen a México dentro del reordenamiento productivo global",
-        source: "The Rio Times",
-        date: "15 abr 2026",
-        url: "https://www.riotimesonline.com/mexico-economy-2026-outlook/",
-        summary: "La inversión extranjera y la integración manufacturera muestran cómo cambia el mapa de poder económico.",
-      },
+      global: [
+        {
+          headline: "Reuters ubica a México en bajo crecimiento e inflación persistente",
+          source: "Reuters / Yahoo Finance",
+          date: "20 abr 2026",
+          url: "https://finance.yahoo.com/economy/policy/articles/mexico-economy-stuck-mild-stagflation-140914856.html",
+          summary: "La encuesta proyecta crecimiento moderado en 2026 y subraya la incertidumbre comercial con Estados Unidos y Canadá.",
+        },
+        {
+          headline: "El nearshoring sostiene la integración de México con Norteamérica",
+          source: "Vanguard",
+          date: "9 mar 2026",
+          url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-mexico.html",
+          summary: "El análisis ve a México recuperándose por demanda estadounidense, empleo resistente y cadenas manufactureras integradas.",
+        },
+        {
+          headline: "La revisión del T-MEC concentra el principal riesgo externo de México",
+          source: "CSIS",
+          date: "3 feb 2026",
+          url: "https://www.csis.org/analysis/nearshoring-without-growth-why-investment-uncertainty-holding-mexico-back",
+          summary: "El reporte advierte que la incertidumbre de inversión puede limitar que el nearshoring se convierta en crecimiento sostenido.",
+        },
+      ],
+      bop: [
+        {
+          headline: "La cuenta corriente mexicana cerró 2025 con superávit trimestral",
+          source: "Trading Economics / Banco de México",
+          date: "feb 2026",
+          url: "https://tradingeconomics.com/mexico/current-account",
+          summary: "México registró superávit de cuenta corriente de 7,702 millones de dólares en el cuarto trimestre de 2025.",
+        },
+        {
+          headline: "Banxico prevé déficit de cuenta corriente para 2026",
+          source: "Banco de México",
+          date: "2026",
+          url: "https://www.banxico.org.mx/TablasWeb/informes-trimestrales/octubre-diciembre-2025/9110424A-D98D-4F75-BA81-A6105193C48F.html",
+          summary: "El banco central estima para 2026 una cuenta corriente entre -1.5% y -0.8% del PIB.",
+        },
+        {
+          headline: "Exportaciones e importaciones explican el cambio de la balanza externa",
+          source: "Moody's Analytics",
+          date: "2026",
+          url: "https://www.economy.com/mexico/current-account-balance",
+          summary: "Los datos de comercio muestran cómo bienes, servicios y renta externa terminan moviendo la cuenta corriente.",
+        },
+      ],
+      fx: [
+        {
+          headline: "El peso queda atado a Banxico, nearshoring y revisión del T-MEC",
+          source: "The Rio Times",
+          date: "17 abr 2026",
+          url: "https://www.riotimesonline.com/mexico-economy-2026-guide/",
+          summary: "El reporte conecta tasas, inversión extranjera y riesgo comercial con el rango esperado del peso frente al dólar.",
+        },
+        {
+          headline: "Banxico baja la tasa y cambia los incentivos del peso",
+          source: "The Rio Times",
+          date: "15 abr 2026",
+          url: "https://www.riotimesonline.com/mexico-economy-2026-outlook/",
+          summary: "La tasa de referencia en 6.75% y la inflación fuera de objetivo ayudan a explicar movimientos de tipo de cambio.",
+        },
+        {
+          headline: "El peso mexicano mantiene mercado activo de futuros y opciones",
+          source: "CME Group",
+          date: "2026",
+          url: "https://www.cmegroup.com/markets/fx/emerging-market/mexican-peso.html",
+          summary: "Los derivados listados sobre MXN/USD permiten leer expectativas, cobertura y presión cambiaria en dólares.",
+        },
+      ],
+      derivatives: [
+        {
+          headline: "MexDer lista futuros de dólar, euro, IPC y tasas para cubrir riesgos",
+          source: "MexDer",
+          date: "2026",
+          url: "https://www.mexder.com.mx/wb3/wb/MEX/contratos_futuro/_aid/5?language=en",
+          summary: "Los contratos estandarizados muestran cómo funcionan futuros, vencimientos, liquidación y cierre de posiciones.",
+        },
+        {
+          headline: "MexDer ofrece opciones sobre dólar para gestionar volatilidad cambiaria",
+          source: "MexDer",
+          date: "2026",
+          url: "https://www.mexder.com.mx/wb3/wb/MEX/contratos_opcion/_aid/5?language=en",
+          summary: "Las opciones MXN/USD permiten comprar protección cambiaria con prima, strike y vencimiento definidos.",
+        },
+        {
+          headline: "La transición a F-TIIE transforma swaps y derivados de tasas en México",
+          source: "TraditionData",
+          date: "15 abr 2026",
+          url: "https://www.traditiondata.com/products/mexican-mxn-interest-rate-derivatives-data/",
+          summary: "El mercado mexicano usa curvas F-TIIE, OIS y opciones de tasas para valorar y cubrir exposición financiera.",
+        },
+      ],
+      crisis: [
+        {
+          headline: "México enfrenta riesgo de estancamiento por choques externos",
+          source: "Reuters / Yahoo Finance",
+          date: "20 abr 2026",
+          url: "https://finance.yahoo.com/economy/policy/articles/mexico-economy-stuck-mild-stagflation-140914856.html",
+          summary: "La combinación de inflación, bajo crecimiento y riesgo comercial sirve para estudiar vulnerabilidad externa.",
+        },
+        {
+          headline: "Banxico anticipa déficits externos más amplios hacia 2026 y 2027",
+          source: "Banco de México",
+          date: "2026",
+          url: "https://www.banxico.org.mx/TablasWeb/informes-trimestrales/octubre-diciembre-2025/9110424A-D98D-4F75-BA81-A6105193C48F.html",
+          summary: "Las previsiones de cuenta corriente ayudan a detectar presiones antes de que se vuelvan crisis de pagos.",
+        },
+        {
+          headline: "La incertidumbre del T-MEC puede frenar inversión y crecimiento",
+          source: "CSIS",
+          date: "3 feb 2026",
+          url: "https://www.csis.org/analysis/nearshoring-without-growth-why-investment-uncertainty-holding-mexico-back",
+          summary: "El caso muestra cómo una economía integrada puede sufrir por reglas comerciales, confianza y financiamiento.",
+        },
+      ],
+      cases: [
+        {
+          headline: "Nearshoring y T-MEC mantienen a México dentro del reordenamiento global",
+          source: "The Rio Times",
+          date: "15 abr 2026",
+          url: "https://www.riotimesonline.com/mexico-economy-2026-outlook/",
+          summary: "La inversión extranjera y la integración manufacturera muestran cómo cambia el mapa de poder económico.",
+        },
+        {
+          headline: "México supera a socios asiáticos por cercanía, costos y reglas regionales",
+          source: "Vanguard",
+          date: "9 mar 2026",
+          url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-mexico.html",
+          summary: "La relocalización productiva coloca a México como caso central del cambio en cadenas globales.",
+        },
+        {
+          headline: "La economía mexicana depende del equilibrio entre China, EE. UU. y Norteamérica",
+          source: "CSIS",
+          date: "3 feb 2026",
+          url: "https://www.csis.org/analysis/nearshoring-without-growth-why-investment-uncertainty-holding-mexico-back",
+          summary: "El nearshoring se entiende como respuesta al ascenso de China y a la disputa por manufactura global.",
+        },
+      ],
     },
   },
   "United States of America": {
@@ -906,7 +1002,8 @@ const TOPIC_SOURCE = {
 function buildTopicNews(countryKey, country) {
   return TOPICS.map((topic) => {
     const sourceKey = TOPIC_SOURCE[topic.id] || "global";
-    const story = country.sources[sourceKey];
+    const stories = [country.sources[sourceKey]].flat();
+    const story = stories[0];
     const special =
       topic.id === "mexico-current-account" && countryKey !== "Mexico"
         ? `Comparalo con México: este dato de ${country.displayName} ayuda a ver si una cuenta corriente depende más de comercio, renta de inversiones o flujos financieros.`
@@ -916,11 +1013,15 @@ function buildTopicNews(countryKey, country) {
       ...topic,
       country: countryKey,
       title: story.headline,
-      source: story.source,
+      source: stories.length > 1 ? `${stories.length} noticias` : story.source,
       date: story.date,
       url: story.url,
       summary: story.summary,
       classroomNote: special,
+      stories: stories.map((item) => ({
+        ...item,
+        classroomNote: special,
+      })),
     };
   });
 }
