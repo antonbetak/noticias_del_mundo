@@ -3,16 +3,17 @@ import PulseMap from "./components/PulseMap";
 import {
   AVAILABLE_COUNTRIES,
   COUNTRY_BRIEFINGS,
+  NEWS_UPDATED_AT,
   TOPICS,
 } from "./lib/newsData";
 
 const INITIAL_COUNTRY = "Mexico";
 const INITIAL_TOPIC = TOPICS[0].id;
 
-function getTodayLabel() {
+function getUpdatedLabel() {
   return new Intl.DateTimeFormat("es-MX", {
     dateStyle: "medium",
-  }).format(new Date());
+  }).format(new Date(NEWS_UPDATED_AT));
 }
 
 function getCountryLabel(country) {
@@ -108,6 +109,27 @@ export default function App() {
   }, [briefing, selectedTopicId]);
 
   const countryLabel = getCountryLabel(selectedCountry);
+  const sourceTiles = useMemo(() => {
+    if (!selectedStory) {
+      return [];
+    }
+
+    const stories = selectedStory.stories?.length
+      ? selectedStory.stories
+      : [selectedStory];
+    const seen = new Set();
+
+    return stories.filter((story) => {
+      const key = `${story.source}-${story.url}`;
+
+      if (seen.has(key)) {
+        return false;
+      }
+
+      seen.add(key);
+      return true;
+    });
+  }, [selectedStory]);
 
   return (
     <div className="app-shell">
@@ -131,7 +153,7 @@ export default function App() {
               </div>
               <div className="meta-card">
                 <span>Actualizado</span>
-                <strong>{getTodayLabel()}</strong>
+                <strong>{getUpdatedLabel()}</strong>
               </div>
             </div>
           </div>
@@ -211,10 +233,10 @@ export default function App() {
                 <section className="source-board">
                   <div>
                     <span className="title-kicker">Fuentes usadas</span>
-                    <h3>Base reciente de {countryLabel}</h3>
+                    <h3>Fuentes de {selectedStory.label}</h3>
                   </div>
                   <div className="source-grid">
-                    {Object.values(briefing.sources).flat().map((source) => (
+                    {sourceTiles.map((source) => (
                       <a
                         className="source-tile"
                         href={source.url}

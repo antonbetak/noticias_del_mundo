@@ -1,3 +1,7 @@
+import { AUTO_NEWS } from "./autoNewsData.js";
+
+const CURATED_NEWS_UPDATED_AT = "2026-04-22T00:00:00-06:00";
+
 export const TOPICS = [
   { id: "global-finance", label: "Globalización y finanzas internacionales", group: "Globalización" },
   { id: "origins", label: "Orígenes de las finanzas internacionales", group: "Globalización" },
@@ -1340,13 +1344,70 @@ function buildTopicNews(countryKey, country) {
   });
 }
 
+function isFreshAutoNews(metadata) {
+  if (!metadata?.generatedAt) {
+    return false;
+  }
+
+  const generatedAt = new Date(metadata.generatedAt).getTime();
+
+  if (!Number.isFinite(generatedAt)) {
+    return false;
+  }
+
+  const updateEveryDays = metadata.updateEveryDays || 15;
+  const maxAgeMs = updateEveryDays * 24 * 60 * 60 * 1000;
+
+  return Date.now() - generatedAt <= maxAgeMs;
+}
+
+function applyAutoNews(countryKey, briefing) {
+  const countryAutoNews = AUTO_NEWS.countries?.[countryKey];
+
+  if (!countryAutoNews || !isFreshAutoNews(AUTO_NEWS.metadata)) {
+    return briefing;
+  }
+
+  const topics = briefing.topics.map((topic) => {
+    const autoStories = countryAutoNews.topics?.[topic.id];
+
+    if (!Array.isArray(autoStories) || autoStories.length !== 3) {
+      return topic;
+    }
+
+    const stories = autoStories.map((story) => ({
+      ...story,
+      classroomNote: story.classroomNote || topic.classroomNote,
+    }));
+
+    return {
+      ...topic,
+      title: stories[0].headline,
+      source: `${stories.length} noticias`,
+      date: stories[0].date,
+      url: stories[0].url,
+      summary: stories[0].summary,
+      stories,
+    };
+  });
+
+  return {
+    ...briefing,
+    topics,
+  };
+}
+
+export const NEWS_UPDATED_AT = isFreshAutoNews(AUTO_NEWS.metadata)
+  ? AUTO_NEWS.metadata.generatedAt
+  : CURATED_NEWS_UPDATED_AT;
+
 export const COUNTRY_BRIEFINGS = Object.fromEntries(
   Object.entries(COUNTRY_LIBRARY).map(([key, country]) => [
     key,
-    {
+    applyAutoNews(key, {
       ...country,
       topics: buildTopicNews(key, country),
-    },
+    }),
   ]),
 );
 

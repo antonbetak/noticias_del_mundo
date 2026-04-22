@@ -1,0 +1,37 @@
+name: Update filtered news
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 1,15 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update automatic news
+        run: npm run news:update
+
+      - name: Verify build
+        run: npm run build
+
+      - name: Commit updated news
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update filtered news"
+          file_pattern: src/lib/autoNewsData.js
