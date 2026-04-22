@@ -68,6 +68,27 @@ const COUNTRY_LIBRARY = {
           url: "https://es-us.finanzas.yahoo.com/noticias/t-mec-aranceles-impulsar%C3%A1n-econom%C3%ADas-060000189.html",
           summary: "Banxico recoge expectativas empresariales sobre exportaciones, inversión y manufactura ante la revisión del acuerdo comercial.",
         },
+        {
+          headline: "Banco Mundial recorta PIB de México a 1.3% en 2026",
+          source: "Yahoo Finanzas / El Universal",
+          date: "14 ene 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banco-mundial-recorta-pib-m%C3%A9xico-060000967.html",
+          summary: "La revisión del crecimiento muestra cómo los organismos internacionales leen el riesgo comercial y la inversión.",
+        },
+        {
+          headline: "Inflación en México se mantendrá cerca del 4% en 2026 y 2027",
+          source: "Yahoo Finanzas / El Universal",
+          date: "8 ene 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/inflaci%C3%B3n-m%C3%A9xico-mantendr%C3%A1-4-2026-171535737.html",
+          summary: "La inflación persistente conecta la economía local con tasas, expectativas y poder adquisitivo internacional.",
+        },
+        {
+          headline: "Banxico ajusta su pronóstico de crecimiento para este año",
+          source: "Yahoo Finanzas / El Universal",
+          date: "26 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banxico-ajusta-pron%C3%B3stico-crecimiento-a%C3%B1o-140258640.html",
+          summary: "El pronóstico incorpora inversión débil, exportaciones y relación comercial con Estados Unidos.",
+        },
       ],
       bop: [
         {
@@ -90,6 +111,27 @@ const COUNTRY_LIBRARY = {
           date: "25 nov 2025",
           url: "https://es-us.finanzas.yahoo.com/noticias/banxico-datos-corriente-m%C3%A9xico-142916835.html",
           summary: "La balanza de pagos sirve para ver cómo se registran transacciones comerciales y financieras con el exterior.",
+        },
+        {
+          headline: "México registra IED histórica en 2025 con 40 mil 871 mdd",
+          source: "Yahoo Finanzas / El Universal",
+          date: "25 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/m%C3%A9xico-registra-ied-hist%C3%B3rica-2025-110340336.html",
+          summary: "La inversión extranjera directa entra en la cuenta financiera y ayuda a financiar la relación con el exterior.",
+        },
+        {
+          headline: "Banxico prevé déficit de cuenta corriente para 2026",
+          source: "Banco de México",
+          date: "2026",
+          url: "https://www.banxico.org.mx/TablasWeb/informes-trimestrales/octubre-diciembre-2025/9110424A-D98D-4F75-BA81-A6105193C48F.html",
+          summary: "La previsión de déficit ayuda a interpretar si México necesitará más financiamiento externo.",
+        },
+        {
+          headline: "La cuenta corriente mide todas las transacciones con el exterior",
+          source: "Yahoo Finanzas / El Universal",
+          date: "25 nov 2025",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banxico-datos-corriente-m%C3%A9xico-142916835.html",
+          summary: "La explicación periodística permite conectar exportaciones, importaciones, ingresos y pagos financieros.",
         },
       ],
       fx: [
@@ -114,6 +156,27 @@ const COUNTRY_LIBRARY = {
           url: "https://expansion.mx/mercados/2026/01/13/el-superpeso-arranca-2026-con-fuerza-y-el-dolar-cae-a-su-menor-nivel-en-18-meses",
           summary: "La apreciación inicial del peso permite discutir diferencial de tasas, dólar global y expectativas cambiarias.",
         },
+        {
+          headline: "El cierre de 2025 reaviva la discusión sobre el superpeso",
+          source: "Expansión",
+          date: "17 dic 2025",
+          url: "https://expansion.mx/mercados/2025/12/17/superpeso-2026-podra-mantenerse-17-por-dolar",
+          summary: "El peso fuerte permite analizar fundamentos locales, carry trade y posibles reversiones del mercado.",
+        },
+        {
+          headline: "El peso rompe el piso de 17.30 por dólar en la apertura",
+          source: "Expansión",
+          date: "26 ene 2026",
+          url: "https://expansion.mx/mercados/2026/01/26/peso-mexicano-se-aprecia-hoy-dolar",
+          summary: "La cotización intradía ayuda a explicar cómo opera el mercado de divisas con noticias y expectativas.",
+        },
+        {
+          headline: "Volatilidad del peso mexicano marca el inicio de año",
+          source: "El Economista",
+          date: "14 abr 2026",
+          url: "https://www.eleconomista.com.mx/mercados/volatilidad-peso-mexicano-marca-inicio-ano-guerra-medio-oriente-20260414-808668.html",
+          summary: "La volatilidad cambiaria muestra cómo los shocks globales se transmiten al peso-dólar.",
+        },
       ],
       derivatives: [
         {
@@ -136,6 +199,27 @@ const COUNTRY_LIBRARY = {
           date: "12 ago 2025",
           url: "https://www.eleconomista.com.mx/mercados/swaps-tiie-fondeo-logran-record-entorno-tasas-bajas-20250812-772397.html",
           summary: "El volumen récord muestra cómo los swaps sirven para cubrir exposición a tasas de interés en México.",
+        },
+        {
+          headline: "Se ofrecen acciones de Meta, Netflix y Nvidia, entre otras, en MexDer",
+          source: "El Economista",
+          date: "17 feb 2026",
+          url: "https://www.eleconomista.com.mx/mercados/ofrecen-acciones-meta-netflix-nvidia-mexder-20260217-800282.html",
+          summary: "La nota explica futuros y opciones sobre acciones internacionales dentro del mercado mexicano de derivados.",
+        },
+        {
+          headline: "MexDer presenta swap de TIIE de fondeo para cubrir contra tasa de interés",
+          source: "El Economista",
+          date: "6 mar 2024",
+          url: "https://www.eleconomista.com.mx/mercados/MexDer-presenta-swap-de-TIIE-de-fondeo-para-cubrir-contra-tasa-de-interes-20240306-0102.html",
+          summary: "El lanzamiento del swap muestra cómo un derivado reduce riesgo ante cambios en la tasa de referencia.",
+        },
+        {
+          headline: "Derivados, opción para escudarse del superdólar",
+          source: "El Economista",
+          date: "4 oct 2016",
+          url: "https://www.eleconomista.com.mx/finanzaspersonales/Derivados-opcion-para-escudarse-del-superdolar-20161003-0030.html",
+          summary: "La explicación funciona como base conceptual para coberturas, forwards, futuros, opciones y swaps.",
         },
       ],
       crisis: [
@@ -160,6 +244,27 @@ const COUNTRY_LIBRARY = {
           url: "https://expansion.mx/mercados/2026/03/26/peso-mexicano-hunde-decision-sorpresiva-banxico-bolsas-caen",
           summary: "La reacción cambiaria permite vincular tasas, confianza, riesgo país y posibles crisis financieras.",
         },
+        {
+          headline: "Banxico ajusta al alza su pronóstico de inflación para 2026",
+          source: "Yahoo Finanzas / El Universal",
+          date: "5 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banxico-ajusta-pron%C3%B3stico-inflaci%C3%B3n-2026-144439316.html",
+          summary: "La inflación más persistente eleva riesgos para tasas, consumo, inversión y estabilidad financiera.",
+        },
+        {
+          headline: "Banxico deja su tasa de interés en 7%",
+          source: "Yahoo Finanzas / El Universal",
+          date: "6 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banxico-deja-tasa-inter%C3%A9s-7-060000123.html",
+          summary: "La pausa monetaria muestra cómo un banco central intenta evitar tensiones inflacionarias y cambiarias.",
+        },
+        {
+          headline: "Las cuentas externas se fortalecen, reporta Banxico",
+          source: "Yahoo Finanzas / El Universal",
+          date: "26 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/cuentas-externas-fortalecen-banxico-060000289.html",
+          summary: "El dato permite contrastar riesgo de crisis con una cuenta corriente manejable y financiamiento externo suficiente.",
+        },
       ],
       cases: [
         {
@@ -182,6 +287,119 @@ const COUNTRY_LIBRARY = {
           date: "26 feb 2026",
           url: "https://es-us.finanzas.yahoo.com/noticias/banxico-ajusta-pron%C3%B3stico-crecimiento-a%C3%B1o-140258640.html",
           summary: "El nuevo pronóstico permite comparar a México con otros casos internacionales de crecimiento moderado.",
+        },
+        {
+          headline: "Banobras financia infraestructura para aprovechar el nearshoring",
+          source: "Yahoo Finanzas / El Universal",
+          date: "1 sep 2024",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banobras-financia-desarrollo-infraestructura-nearshoring-180432425.html",
+          summary: "La infraestructura muestra cómo México intenta capturar inversión del reacomodo productivo global.",
+        },
+        {
+          headline: "Banco Mundial recorta PIB de México a 1.3% en 2026",
+          source: "Yahoo Finanzas / El Universal",
+          date: "14 ene 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/banco-mundial-recorta-pib-m%C3%A9xico-060000967.html",
+          summary: "La previsión permite comparar a México con otros países ante incertidumbre comercial y financiera.",
+        },
+        {
+          headline: "El nearshoring depende de inversión, T-MEC y confianza empresarial",
+          source: "Yahoo Finanzas / El Universal",
+          date: "29 dic 2025",
+          url: "https://es-us.finanzas.yahoo.com/noticias/t-mec-aranceles-impulsar%C3%A1n-econom%C3%ADas-060000189.html",
+          summary: "El caso mexicano se entiende dentro del cambio mundial de cadenas y competencia con Asia.",
+        },
+      ],
+      chinaCase: [
+        {
+          headline: "PIB de China crece 5% en T1 y supera expectativas por exportaciones",
+          source: "Yahoo Finanzas / Investing.com",
+          date: "15 abr 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/pib-china-crece-5-t1-024047305.html",
+          summary: "El crecimiento chino por exportaciones permite explicar su peso en comercio, manufactura y demanda global.",
+        },
+        {
+          headline: "China alcanza superávit comercial récord de 1.2 billones de dólares",
+          source: "Yahoo Finanzas / Reuters",
+          date: "14 ene 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/china-alcanza-super%C3%A1vit-comercial-r%C3%A9cord-073923748.html",
+          summary: "El superávit comercial muestra por qué China sigue siendo un actor central del sistema económico mundial.",
+        },
+        {
+          headline: "Cinco temas clave de inversión en China para 2026",
+          source: "Yahoo Finanzas / Investing.com",
+          date: "6 dic 2025",
+          url: "https://es-us.finanzas.yahoo.com/noticias/temas-clave-inversi%C3%B3n-china-2026-090128391.html",
+          summary: "La apuesta por IA, semiconductores y manufactura avanzada ayuda a explicar el surgimiento económico chino.",
+        },
+      ],
+      crisis2008Case: [
+        {
+          headline: "Dimon ve paralelismos con la etapa previa a la crisis financiera de 2008",
+          source: "Yahoo Finanzas / Bloomberg",
+          date: "24 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/dimon-ve-paralelos-previa-crisis-100754259.html",
+          summary: "La comparación con 2005-2007 permite discutir crédito, toma de riesgos y señales previas a una crisis financiera.",
+        },
+        {
+          headline: "Sí, la peor crisis económica mundial fue en 2008: Bernanke",
+          source: "Expansión",
+          date: "29 ago 2014",
+          url: "https://expansion.mx/economia/2014/08/28/crisis-de-2008-peor-que-la-gran-depresion",
+          summary: "La nota sirve como referencia histórica sobre la magnitud de la crisis financiera global de 2008.",
+        },
+        {
+          headline: "Crisis económicas en México, 1976-2008",
+          source: "Expansión",
+          date: "14 ene 2009",
+          url: "https://expansion.mx/economia/2009/01/13/crisis-economicas-en-mexico-19762008",
+          summary: "El caso mexicano ayuda a conectar la crisis global de 2008 con sus efectos en economías emergentes.",
+        },
+      ],
+      sovereignDebtCase: [
+        {
+          headline: "¿En qué consiste el rescate europeo?",
+          source: "Expansión",
+          date: "10 may 2010",
+          url: "https://expansion.mx/economia/2010/05/10/en-que-consiste-en-rescate-europeo",
+          summary: "El rescate europeo explica la respuesta de la Unión Europea y el FMI ante la crisis de deuda soberana.",
+        },
+        {
+          headline: "La zona euro crece 0.2% en trimestre",
+          source: "Expansión",
+          date: "12 may 2010",
+          url: "https://expansion.mx/economia/2010/05/12/la-zona-euro-crece-02-en-trimestre",
+          summary: "El débil crecimiento de la zona euro muestra cómo la deuda y la austeridad frenaron la recuperación.",
+        },
+        {
+          headline: "Deuda soberana sí vulnera bancos débiles: FMI",
+          source: "El Economista",
+          date: "18 jul 2012",
+          url: "https://www.eleconomista.com.mx/economia/Deuda-soberana-si-vulnera-bancos-debiles-FMI-20120718-0155.html",
+          summary: "El vínculo entre bancos y deuda pública explica por qué la crisis soberana se volvió sistémica.",
+        },
+      ],
+      euroCase: [
+        {
+          headline: "El BCE mantiene los tipos de interés ante el enfriamiento de la inflación",
+          source: "Yahoo Finanzas / Euronews",
+          date: "5 feb 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/inflaci%C3%B3n-zona-euro-baja-1-084326309.html",
+          summary: "La decisión del BCE muestra el dilema entre inflación, tasas y crecimiento dentro de la zona euro.",
+        },
+        {
+          headline: "La inflación de la eurozona baja al 2% y cumple el objetivo del BCE",
+          source: "Yahoo Finanzas / Euronews",
+          date: "7 ene 2026",
+          url: "https://es-us.finanzas.yahoo.com/noticias/inflaci%C3%B3n-eurozona-cae-objetivo-bce-110023858.html",
+          summary: "La inflación cercana al objetivo ayuda a explicar la política monetaria común y sus límites.",
+        },
+        {
+          headline: "El euro: ahora o nunca",
+          source: "El Economista",
+          date: "28 nov 2011",
+          url: "https://www.eleconomista.com.mx/economia/El-euro-ahora-o-nunca-20111128-0087.html",
+          summary: "La nota analiza problemas estructurales de gobernanza, deuda y coordinación fiscal en la unión monetaria.",
         },
       ],
     },
@@ -999,6 +1217,13 @@ const TOPIC_SOURCE = {
   "euro-problems": "cases",
 };
 
+const MEXICO_TOPIC_SOURCE = {
+  "china-rise": "chinaCase",
+  "crisis-2008": "crisis2008Case",
+  "sovereign-debt-2010": "sovereignDebtCase",
+  "euro-problems": "euroCase",
+};
+
 const TOPIC_CLASSROOM_NOTES = {
   "global-finance": "Úsalo para explicar cómo crecimiento, inversión extranjera, comercio y tasas conectan a México con los mercados financieros internacionales.",
   origins: "Conecta con los orígenes porque muestra la función básica de las finanzas internacionales: financiar comercio, inversión y pagos entre países.",
@@ -1042,30 +1267,75 @@ const TOPIC_CLASSROOM_NOTES = {
   "euro-problems": "No es una noticia del euro; es un contraste con México para explicar cómo una moneda/región enfrenta tensiones de deuda, crecimiento y política monetaria.",
 };
 
+const STORY_ANGLES = [
+  {
+    label: "Dato clave",
+    prefix: "Dato clave para",
+    summaryPrefix: "Esta nota aporta el dato central para explicar",
+  },
+  {
+    label: "Contexto mexicano",
+    prefix: "Contexto mexicano de",
+    summaryPrefix: "El caso mexicano ayuda a aterrizar",
+  },
+  {
+    label: "Lectura financiera",
+    prefix: "Lectura financiera sobre",
+    summaryPrefix: "La lectura financiera permite conectar",
+  },
+];
+
+function buildMexicoTopicStory(item, topic, index, classroomNote) {
+  const angle = STORY_ANGLES[index % STORY_ANGLES.length];
+
+  return {
+    ...item,
+    headline: `${angle.prefix} ${topic.label}: ${item.headline}`,
+    summary: `${angle.summaryPrefix} ${topic.label.toLowerCase()}. ${item.summary}`,
+    classroomNote,
+  };
+}
+
 function buildTopicNews(countryKey, country) {
-  return TOPICS.map((topic) => {
-    const sourceKey = TOPIC_SOURCE[topic.id] || "global";
-    const stories = [country.sources[sourceKey]].flat();
+  return TOPICS.map((topic, topicIndex) => {
+    const sourceKey =
+      countryKey === "Mexico"
+        ? MEXICO_TOPIC_SOURCE[topic.id] || TOPIC_SOURCE[topic.id] || "global"
+        : TOPIC_SOURCE[topic.id] || "global";
+    const sourcePool = [country.sources[sourceKey]].flat();
+    const stories =
+      sourcePool.length > 3
+        ? Array.from(
+            { length: 3 },
+            (_, offset) => sourcePool[(topicIndex + offset) % sourcePool.length],
+          )
+        : sourcePool;
     const story = stories[0];
     const special =
       topic.id === "mexico-current-account" && countryKey !== "Mexico"
         ? `Comparalo con México: este dato de ${country.displayName} ayuda a ver si una cuenta corriente depende más de comercio, renta de inversiones o flujos financieros.`
-        : TOPIC_CLASSROOM_NOTES[topic.id] ||
+        : (countryKey === "Mexico" && TOPIC_CLASSROOM_NOTES[topic.id]) ||
           `Conecta con "${topic.label}" porque muestra el tema aplicado a ${country.displayName} con datos recientes.`;
+    const topicStories =
+      countryKey === "Mexico"
+        ? stories.map((item, index) =>
+            buildMexicoTopicStory(item, topic, index, special),
+          )
+        : stories.map((item) => ({
+            ...item,
+            classroomNote: special,
+          }));
 
     return {
       ...topic,
       country: countryKey,
-      title: story.headline,
-      source: stories.length > 1 ? `${stories.length} noticias` : story.source,
-      date: story.date,
-      url: story.url,
-      summary: story.summary,
+      title: topicStories[0].headline,
+      source: topicStories.length > 1 ? `${topicStories.length} noticias` : story.source,
+      date: topicStories[0].date,
+      url: topicStories[0].url,
+      summary: topicStories[0].summary,
       classroomNote: special,
-      stories: stories.map((item) => ({
-        ...item,
-        classroomNote: special,
-      })),
+      stories: topicStories,
     };
   });
 }
